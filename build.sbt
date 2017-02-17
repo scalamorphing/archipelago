@@ -11,7 +11,7 @@ lazy val archipelago = (
     )),
     name := "archipelago",
     clippyColorsEnabled := true,
-    wartremoverErrors ++= Warts.unsafe,
+    wartremoverErrors ++= Warts.allBut(Wart.Throw, Wart.ExplicitImplicitTypes, Wart.PublicInference, Wart.Nothing, Wart.Equals, Wart.TryPartial),
     wartremoverErrors ++= Seq(
       ScalaJSWart.ArrayPartial,
       ScalaJSWart.UndefOrOpsPartial
@@ -44,7 +44,7 @@ lazy val archipelagoSample = (
     )),
     name := "archipelagoSample",
     clippyColorsEnabled := true,
-    wartremoverErrors ++= Warts.unsafe,
+    wartremoverErrors ++= Warts.allBut(Wart.Throw, Wart.ExplicitImplicitTypes, Wart.PublicInference, Wart.Nothing, Wart.Equals, Wart.TryPartial),
     wartremoverErrors ++= Seq(
       ScalaJSWart.ArrayPartial,
       ScalaJSWart.UndefOrOpsPartial

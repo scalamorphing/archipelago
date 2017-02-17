@@ -9,9 +9,9 @@ trait ACanvas { self =>
   import expert.scalamorphing.archipelago.canvas.ACanvas._
   import AnAuthor._
 
-  val caret = TreeMap.empty[AnAuthor, Observable[ACaret]]
-  val cursor = TreeMap.empty[AnAuthor, Observable[ACursor]]
-  val keyboard = TreeMap.empty[AnAuthor, Observable[AKeyboard]]
+  val caret: Observable[TreeMap[AnAuthor, Observable[ACaret]]]
+  val cursor: Observable[TreeMap[AnAuthor, Observable[ACursor]]]
+  val keyboard: Observable[TreeMap[AnAuthor, Observable[AKeyboard]]]
 }
 
 object ACanvas {
