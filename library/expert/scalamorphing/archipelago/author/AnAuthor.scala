@@ -1,14 +1,11 @@
 package expert.scalamorphing.archipelago.author
 
-import expert.scalamorphing.archipelago.input.{ ACaret, ACursor, AKeyboard }
+import expert.scalamorphing.archipelago.input.{ AKeyboard, TheCaret, TheCursor }
 import expert.scalamorphing.archipelago.letter.ALetter
 import monix.reactive.Observable
 
 trait AnAuthor[TheLetter <: ALetter] {
   val UUID: String
-
-  type TheCaret = ACaret
-  type TheCursor = ACursor
   type TheKeyBoard = AKeyboard[TheLetter]
 
   val caret: Observable[TheCaret]
