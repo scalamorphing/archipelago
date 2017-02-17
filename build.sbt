@@ -24,7 +24,8 @@ lazy val archipelago = (
       "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
       "com.lihaoyi" %%% "scalatags" % "0.6.2",
       "io.monix" %%% "monix" % "2.2.1",
-      "io.monix" %%% "monix-cats" % "2.2.1"
+      "io.monix" %%% "monix-cats" % "2.2.1",
+      "org.scala-js" %%% "scalajs-dom" % "0.9.0"
     ),
     addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full),
     addCompilerPlugin("org.wartremover" %% "wartremover" % "2.0.2"),
@@ -56,7 +57,8 @@ lazy val archipelagoSample = (
       "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
       "com.lihaoyi" %%% "scalatags" % "0.6.2",
       "io.monix" %%% "monix" % "2.2.1",
-      "io.monix" %%% "monix-cats" % "2.2.1"
+      "io.monix" %%% "monix-cats" % "2.2.1",
+      "org.scala-js" %%% "scalajs-dom" % "0.9.0"
     ),
     addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full),
     addCompilerPlugin("org.wartremover" %% "wartremover" % "2.0.2"),
